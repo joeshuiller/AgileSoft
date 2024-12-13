@@ -1,0 +1,43 @@
+.ajust-content {
+    padding: 20px;
+}
+
+.ajust-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-slider {
+    width: 100%;
+}
+
+swiper-slide {
+    width: 250px !important;
+}
+
+.carousel-wrapper {
+    width: 100w;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .caption {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        font-size: 40px;
+    }
+}
+
+:host ::ng-deep .swiper-button-prev-unique {
+    left: 0;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+:host ::ng-deep .swiper-button-next-unique {
+    right: 0;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+}

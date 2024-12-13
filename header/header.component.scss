@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bs-body-color)!important;
+    padding: 10px;
+    .img-login {
+        width: 100px;
+    }
+    .title {
+        width: 350px;
+        color: #ffffff;
+        text-align: right;
+        strong {
+            width: 100%;
+            color: #ffffff;
+            text-align: left;
+            img {
+                width: 50px;
+            }
+        }
+    }
+}

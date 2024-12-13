@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bs-body-color)!important;
+    padding: 10px;
+    a {
+        color: #ffffff;
+    }
+    button {
+        background-color: #ffffff;
+        border: 0px;
+        color: #000;
+        margin: 5px;
+        border-radius: 5px;
+    }
+}

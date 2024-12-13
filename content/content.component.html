@@ -1,0 +1,26 @@
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ajust-text">
+    <h1>Películas en estreno</h1>
+</div>
+<div class="p-5">
+    <swiper-container #swiper class="swiper" autoplay="true" [slidesPerView]="3" [navigation]="true" effect="coverflow">
+        <swiper-slide *ngFor="let item of slider">
+            <div class="card mx-2">
+                <img [src]="sliderUrl+item.posterPath" alt="Random first slide" class="img-slider" />
+            </div>
+        </swiper-slide>
+    </swiper-container>
+</div>
+<div class="row" *ngIf="images">
+    <div class="col-md-12 ajust-text">
+        <h1>Películas más populares</h1>
+    </div>
+    <div class="col-md-3 ajust-content" *ngFor="let item of images">
+        <div class="card">
+            <img [src]="imagesUrl+item.posterPath" class="card-img-top" alt="Random first slide" />
+            <div class="card-body">
+                <button href="#" class="btn btn-primary" (click)="detail(item)">Ver mas</button>
+            </div>
+        </div>
+    </div>
+
+</div>

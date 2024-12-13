@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12 ajust-text">
+        <h1>{{textAlert.title}}</h1>
+    </div>
+    <div class="col-md-12">
+        <img [src]="sliderUrl+textAlert.backdropPath" class="card-img-top" alt="agilesMovies" />
+    </div>
+    <div class="col-md-12 ajust-text-content">
+        <strong>
+            <img [src]="sliderUrl+textAlert.posterPath" class="card-img-top-ajust" alt="agilesMovies">
+        {{textAlert.overView}}
+        </strong>
+
+    </div>
+    <div class="col-md-12 ajust-text">
+        <h1>Reparto</h1>
+    </div>
+    <div class="p-5 col-md-12">
+        <swiper-container #swiper class="swiper" autoplay="true" [slidesPerView]="5" [navigation]="true">
+            <swiper-slide *ngFor="let item of slider">
+                <div class="card mx-2">
+                    <img [src]="sliderUrl+item.profilePath" alt="agilesMovies" class="img-slider" />
+                    <p class="title">{{item.name}}</p>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
