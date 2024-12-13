@@ -1,0 +1,14 @@
+/* Importing Bootstrap SCSS file. */
+
+@import 'bootstrap/scss/bootstrap';
+.swal2-popup.swal2-toast {
+    background: #000000ad !important;
+}
+
+body.swal2-toast-shown .swal2-container {
+    width: 250px !important;
+}
+
+.img.swal2-image {
+    width: 100px;
+}

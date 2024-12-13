@@ -1,0 +1,1 @@
+export interface Emit{ id: number, description: string}

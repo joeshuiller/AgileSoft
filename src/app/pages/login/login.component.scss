@@ -1,0 +1,35 @@
+.ajustForm {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    .card-header {
+        background-color: #000;
+        .img-login {
+            width: 250px;
+        }
+    }
+    .card-body {
+        .p-error {
+            width: 100%;
+            margin-top: 5px;
+            color: red;
+        }
+    }
+    .card-footer {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 150px;
+            background-color: #ffffff;
+            border: 0px;
+            border-radius: 10px;
+        }
+    }
+}
